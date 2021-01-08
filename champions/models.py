@@ -1,3 +1,24 @@
 from django.db import models
 
-# Create your models here.
+class Champion(models.Model):
+    name = models.CharField(max_length = 200)
+    hp = models.IntegerField()
+    hpperlevel = models.IntegerField()
+    mp = models.IntegerField()
+    mpperlevel = models.IntegerField()
+    movespeed = models.IntegerField()
+    armor = models.IntegerField()
+    armorperlevel = models.IntegerField()
+    spellblock = models.IntegerField()
+    spellblockperlevel = models.IntegerField()
+    attackrange = models.IntegerField()
+    hpregen = models.IntegerField()
+    hpregenperlevel = models.IntegerField()
+    mpregen = models.IntegerField()
+    mpregenperlevel = models.IntegerField()
+    crit = models.IntegerField()
+    critperlevel = models.IntegerField()
+    attackdamage = models.IntegerField()
+    attackdamageperlevel = models.IntegerField()
+    attackspeedperlevel = models.IntegerField()
+    attackspeed = models.IntegerField()
