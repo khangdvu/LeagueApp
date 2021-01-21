@@ -1,12 +1,14 @@
 from champions.models import Champion
 import json
 
+
 with open('res/champion.json', encoding="utf8") as inputFile:
     data = json.load(inputFile)
     champions = data['data']
     for key,currentChamp in champions.items():
         entry = Champion(
         name=currentChamp['name'],
+        sprite=currentChamp['image']['full'],
         hp=currentChamp['stats']['hp'],
         hpperlevel = currentChamp['stats']['hpperlevel'],
         mp = currentChamp['stats']['mp'],

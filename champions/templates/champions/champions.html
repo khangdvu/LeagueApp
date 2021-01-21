@@ -1,0 +1,9 @@
+<ul>
+  {% for champion in all_champions %}
+  <li> {{champion.name}}
+</li>
+{% load static %}
+{% static "img/champion" as baseUrl %}
+<img src= "{{baseUrl}}/{{champion.sprite}}" alt={{champion.sprite}}>
+{% endfor %}
+</ul>

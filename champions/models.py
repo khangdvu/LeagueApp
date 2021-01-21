@@ -2,6 +2,7 @@ from django.db import models
 
 class Champion(models.Model):
     name = models.CharField(max_length = 200)
+    sprite = models.CharField(max_length = 200)
     hp = models.FloatField()
     hpperlevel = models.FloatField()
     mp = models.FloatField()
