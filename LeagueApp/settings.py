@@ -36,6 +36,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'champions.apps.ChampionsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
