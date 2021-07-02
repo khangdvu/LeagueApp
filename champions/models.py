@@ -26,3 +26,5 @@ class Champion(models.Model):
 
     def __str__(self):
         return self.name
+
+    objects = models.Manager()
