@@ -11,5 +11,6 @@ router.register(r'champions', views.ChampionViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('getChampion/<str:champName>/<str:itemSet>', views.getChampion, name='getChampion')
 ]
